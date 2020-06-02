@@ -47,6 +47,7 @@ header .showtime {
 .mainbox .column:nth-child(2) {
   flex: 5;
   margin: 0 0.125rem 0.1875rem;
+  overflow: hidden;
 }
 .mainbox .panel {
   position: relative;
@@ -108,7 +109,12 @@ header .showtime {
   line-height: 0.6rem;
   text-align: center;
   font-size: 0.25rem;
-  font-weight: 5rem;
+  font-weight: 400;
+}
+.mainbox .panel h2 a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.125rem;
 }
 .mainbox .panel .chart {
   height: 3rem;
@@ -230,5 +236,16 @@ header .showtime {
   }
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
   }
 }
